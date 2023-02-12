@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo "$(wl-paste)" >> /tmp/tmpclip.txt 

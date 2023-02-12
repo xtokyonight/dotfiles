@@ -1,0 +1,4 @@
+#!/bin/sh
+wall=$(find "$HOME"/Pictures/wallpapers/random -type f | shuf -n 1)
+swww img "$wall" > /dev/null
+# wal -stn -i "$wall" > /dev/null

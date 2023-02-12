@@ -1,0 +1,30 @@
+# emacs
+.config/emacs/config.el
+.config/emacs/custom.el
+.config/emacs/elpa/
+.config/emacs/history
+.config/emacs/places
+.config/emacs/recentf
+.config/emacs/transient/
+.config/emacs/org-roam.db
+.config/emacs/emms/
+.config/emacs/tutorial/
+.config/emacs/games/
+.config/emacs/projectile-bookmarks.eld
+.config/emacs/.cache
+.config/emacs/eln-cache
+
+# neovim
+.config/nvim/plugin/packer_compiled.lua
+
+# pywal
+.cache/wal/colors*
+.cache/wal/sequences
+.cache/wal/wal
+
+# zsh
+.config/zsh/.zcompdump
+.config/zsh/plugins
+
+# mpv
+.config/mpv/watch_later/
