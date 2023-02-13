@@ -10,3 +10,5 @@
 - *Terminal*: [[https://codeberg.org/dnkl/foot][foot]]
 - *Video Player*: [[https://github.com/mpv-player/mpv][mpv]]
 - *Music Player*: [[https://github.com/ncmpcpp/ncmpcpp][ncmpcpp]]
+- *Image Viewer*: [[https://sr.ht/~exec64/imv/][imv]]
+- *File Manager*: [[https://github.com/jarun/nnn][nnn]]
