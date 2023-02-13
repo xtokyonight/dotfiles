@@ -1,6 +1,6 @@
 ** Table of contents
 #+begin_quote
-- [[#details][Details]]
+- [[Details]]
 #+end_quote
 
 ** Details
