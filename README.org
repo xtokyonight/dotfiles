@@ -8,4 +8,5 @@
 - *Compositor*: [[https://hyprland.org/][Hyprland]]
 - *Shell*: [[https://wiki.archlinux.org/title/zsh][Zsh]]
 - *Terminal*: [[https://codeberg.org/dnkl/foot][foot]]
-- *Media Player*: [[https://github.com/mpv-player/mpv][mpv]]
+- *Video Player*: [[https://github.com/mpv-player/mpv][mpv]]
+- *Music Player*: [[https://github.com/ncmpcpp/ncmpcpp][ncmpcpp]]
