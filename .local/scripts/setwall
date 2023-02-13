@@ -1,4 +1,4 @@
 #!/bin/sh
 wall=$(find "$HOME"/Pictures/wallpapers/random -type f | shuf -n 1)
-swww img "$wall" --transition-type any > /dev/null
+swww img "$wall" --transition-type any --transition-fps 120 > /dev/null
 # wal -stn -i "$wall" > /dev/null

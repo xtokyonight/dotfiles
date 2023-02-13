@@ -5,9 +5,11 @@
 
 ** Details
 - *OS*: [[https://archlinux.org/][Arch Linux]]
-- *Compositor*: [[https://hyprland.org/][Hyprland]]
 - *Shell*: [[https://wiki.archlinux.org/title/zsh][Zsh]]
+- *Compositor*: [[https://hyprland.org/][Hyprland]]
 - *Terminal*: [[https://codeberg.org/dnkl/foot][foot]]
+- *Notification Daemon*: [[https://github.com/emersion/mako][mako]]
+- *Wallpaper Loader*: [[https://github.com/Horus645/swww][swww]]
 - *Video Player*: [[https://github.com/mpv-player/mpv][mpv]]
 - *Music Player*: [[https://github.com/ncmpcpp/ncmpcpp][ncmpcpp]]
 - *Image Viewer*: [[https://sr.ht/~exec64/imv/][imv]]
