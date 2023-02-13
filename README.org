@@ -1,7 +1,8 @@
 ** Table of contents
 #+begin_quote
-- [[#gnu-emacs][GNU Emacs]]
+- [[#details][Details]]
 #+end_quote
 
-** GNU Emacs
-[[file:.config/emacs/config.org][dotemacs]]
+** Details
+- *OS*: [[https://archlinux.org/][Arch Linux]]
+- *Compositor*: [[https://hyprland.org/][Hyprland]]
