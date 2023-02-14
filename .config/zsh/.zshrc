@@ -7,22 +7,27 @@ plug "$HOME/.config/zsh/options.zsh"
 # plugins
 # plug "zsh-users/zsh-autosuggestions"
 # plug "zsh-users/zsh-syntax-highlighting"
+plug "MAHcodes/distro-prompt"
 
 # Enable colors and change prompt:
-autoload -U colors && colors
-PS1="%B%F{blue}%~%f%b"$'\n'"%B%F{white}$%f%b "
+#autoload -U colors && colors
+#PS1="%B%F{blue}%~%f%b"$'\n'"%B%F{white}$%f%b "
 
 # Emacs mode
 bindkey -e
 
 cdpath=($HOME/.dotfiles/.config)
 
-# Command completion
+# completions
 autoload -Uz compinit
-compinit
-zstyle ':completion:*' menu select
-_comp_options+=(globdots)		# Include hidden files.
+zstyle ':completion:*' menu yes select
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 zmodload zsh/complist
+_comp_options+=(globdots)		# Include hidden files.
+for dump in "${ZDOTDIR:-$HOME}/.zcompdump"(N.mh+24); do
+  compinit
+done
+compinit -C
 DISABLE_UPDATE_PROMPT=true
 
 # Shortcut to exit shell on partial command line
@@ -38,5 +43,10 @@ ZSH_HIGHLIGHT_STYLES[path_prefix]=none
 
 stty stop undef		# Disable ctrl-s to freeze terminal.
 zle_highlight=('paste:none') # Disbable paste highlighting.
+
+# bindings
+bindkey -s '^x' '^usource ${ZDOTDIR:-$HOME}/.zshrc\n'
+bindkey -M menuselect '?' history-incremental-search-forward
+bindkey -M menuselect '/' history-incremental-search-backward
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
