@@ -3,9 +3,11 @@
 # https://wiki.archlinux.org/title/zsh#Configuring_$PATH
 # https://zsh.sourceforge.io/Guide/zshguide02.html#l24
 typeset -U path PATH
-path=(~/.local/bin ~/.local/scripts $path)
+path=(~/.local/bin ~/.local/scripts ~/.cargo/bin $path)
 export PATH
 
 # anki
 export QT_QPA_PLATFORM=wayland
 export ANKI_WAYLAND=1
+
+. "$HOME/.cargo/env"
