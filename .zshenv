@@ -10,4 +10,3 @@ export PATH
 export QT_QPA_PLATFORM=wayland
 export ANKI_WAYLAND=1
 
-. "$HOME/.cargo/env"
