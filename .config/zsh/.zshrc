@@ -14,13 +14,17 @@ plug "MAHcodes/distro-prompt"
 #PS1="%B%F{blue}%~%f%b"$'\n'"%B%F{white}$%f%b "
 
 # Emacs mode
-bindkey -e
+# bindkey -e
+
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
 
 cdpath=($HOME/.dotfiles/.config)
 
 # completions
 autoload -Uz compinit
-zstyle ':completion:*' menu yes select
+zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 zmodload zsh/complist
 _comp_options+=(globdots)		# Include hidden files.
@@ -48,5 +52,19 @@ zle_highlight=('paste:none') # Disbable paste highlighting.
 bindkey -s '^x' '^usource ${ZDOTDIR:-$HOME}/.zshrc\n'
 bindkey -M menuselect '?' history-incremental-search-forward
 bindkey -M menuselect '/' history-incremental-search-backward
+
+# Use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char
+
+# Edit line in vim with ctrl-e:
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
+bindkey -M vicmd '^[[P' vi-delete-char
+bindkey -M vicmd '^e' edit-command-line
+bindkey -M visual '^[[P' vi-delete
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
