@@ -56,6 +56,7 @@ set clipboard=unnamedplus
 " uncomment the following two lines and comment out the 'clipboard' variable above.
 ""noremap <leader>y "+y
 ""noremap <leader>p "+p
+nnoremap <C-@> :call system("wl-copy", @")<CR>
 
 " security options
 set nomodeline
