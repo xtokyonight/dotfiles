@@ -14,11 +14,25 @@ Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'mbbill/undotree'
-Plug 'jdhao/better-escape.vim'
 call plug#end()
 
 " colorscheme
 set background=dark
+
+" when exiting Goyo, my transparency is shut off, and I have to reload or
+" re-open Vim to re-engage.
+" The right way to override any highlighting if you don't want to edit the
+" colorscheme file directly.
+" https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
+function! MyHighlights() abort
+    highlight Normal guibg=NONE ctermbg=NONE
+endfunction
+
+augroup MyColors
+    autocmd!
+    autocmd ColorScheme * call MyHighlights()
+augroup END
+
 colorscheme gruvbox
 
 " needed for italics, only works in some terminals
@@ -34,11 +48,11 @@ set hlsearch incsearch
 set noswapfile nobackup
 set undofile undodir=$HOME/.vim/undo
 set scrolloff=8
-set colorcolumn=80
+"set colorcolumn=80
 set tabstop=2 softtabstop=2 shiftwidth=2
 set expandtab smartindent
 set splitbelow splitright
-set cursorline cursorcolumn
+"set cursorline cursorcolumn
 
 " enable autocompletion:
 set wildmode=longest,list,full
@@ -56,7 +70,6 @@ set clipboard=unnamedplus
 " uncomment the following two lines and comment out the 'clipboard' variable above.
 ""noremap <leader>y "+y
 ""noremap <leader>p "+p
-nnoremap <C-@> :call system("wl-copy", @")<CR>
 
 " security options
 set nomodeline
@@ -83,3 +96,4 @@ nnoremap <leader>g :Goyo<CR>
 " undotree
 nnoremap <leader>u :UndotreeToggle<CR>
 nnoremap <leader>U :UndotreeFocus<CR>
+

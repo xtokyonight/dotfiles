@@ -1,4 +1,9 @@
 #!/bin/sh
-wall=$(find "$HOME"/Pictures/wallpapers/random -type f | shuf -n 1)
-swww img "$wall" --transition-type any --transition-fps 120 > /dev/null
+#wall=$(find "$WALLPAPERS" -type f | shuf -n 1)
+#xwallpaper --zoom "$wall"
+
+RAND=$(find "$WALLPAPERS" -type f | sort -R | head -1)
+xwallpaper --zoom "$RAND"
+
+# swww img "$wall" --transition-type any --transition-fps 120 > /dev/null
 # wal -stn -i "$wall" > /dev/null

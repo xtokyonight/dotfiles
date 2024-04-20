@@ -39,7 +39,10 @@ do
   case "$1" in
     "C-c")  xclip -selection clipboard -target image/png "$file" ;;
     "C-u")  printf "%s" "$file" | xclip -selection clipboard ;;
-    "C-k")  trash-put "$file" ;; # uses trash-cli program
-    "C-n")  xwallpaper --zoom "$file" & wal -stn -i "$file" > /dev/null && xdotool key --clearmodifiers super+F5 ;;
+    "C-t")  trash-put "$file" ;; # uses trash-cli program
+    "C-n")  xwallpaper --zoom "$file" ;;
+    "C-m")  xwallpaper --clear ;;
   esac
 done
+
+#   "C-n")  xwallpaper --zoom "$file" & wal -stn -i "$file" > /dev/null && xdotool key --clearmodifiers super+F5 ;;

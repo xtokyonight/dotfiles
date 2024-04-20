@@ -1,0 +1,26 @@
+# Reload sxhkdrc
+super + shift + r
+  pkill -usr1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+
+# slock - Simple X display locker
+super + shift + x
+  slock
+
+# screenshot
+super + shift + s
+  flameshot gui
+
+# View wallpapers
+super + w
+  wp
+
+# Kitty terminal
+super + Return
+  kitty
+
+Print
+	maim --select | tee ~/Pictures/ss/$(date +%s).png | xclip -selection clipboard -t image/png
+
+super + Print
+	maim | tee ~/Pictures/ss/$(date +%s).png | xclip -selection clipboard -t image/png
+
