@@ -14,10 +14,6 @@ super + shift + s
 super + w
   wp
 
-# Kitty terminal
-super + Return
-  kitty
-
 Print
 	maim --select | tee ~/Pictures/ss/$(date +%s).png | xclip -selection clipboard -t image/png
 

@@ -26,6 +26,12 @@ set cursorpreviewfmt "\033[7;2m"
 # Show hidden files
 set hidden true
 
+# image previewing with ctpv
+# set previewer ctpv
+# set cleaner ctpvclear
+# &ctpv -s $id
+# &ctpvquit $id
+
 # use enter for shell commands
 map <enter> shell
 
