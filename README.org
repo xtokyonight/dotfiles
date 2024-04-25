@@ -14,3 +14,6 @@
 - *Music player*: [[https://cmus.github.io/][cmus]]
 - *Image viewer*: [[https://nsxiv.codeberg.page/][nsxiv]]
 - *File manager*: [[https://github.com/gokcehan/lf][lf]]
+- *Display locker*:
+  [[https://github.com/betterlockscreen/betterlockscreen][Betterlockscreen]] &
+  [[https://tools.suckless.org/slock/][slock]]
