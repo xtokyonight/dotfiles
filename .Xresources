@@ -2,6 +2,6 @@
 Nsxiv.window.background: black
 Nsxiv.window.foreground: white
 Nsxiv.mark.foreground: red
-Nsxiv.bar.background: black
-Nsxiv.bar.foreground: white
+Nsxiv.bar.background: #222222
+Nsxiv.bar.foreground: #bbbbbb
 Nsxiv.bar.font: JetBrains Mono-10
