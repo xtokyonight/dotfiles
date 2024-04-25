@@ -1,7 +1,7 @@
 ! nsxiv config
 Nsxiv.window.background: black
 Nsxiv.window.foreground: white
-Nsxiv.mark.foreground: white
-Nsxiv.bar.background: white
-Nsxiv.bar.foreground: black
+Nsxiv.mark.foreground: red
+Nsxiv.bar.background: black
+Nsxiv.bar.foreground: white
 Nsxiv.bar.font: JetBrains Mono-10
