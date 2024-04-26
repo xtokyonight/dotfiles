@@ -7,6 +7,7 @@
 - *OS*: [[https://archlinux.org/][Arch Linux]]
 - *Window manager*: [[https://dwm.suckless.org/][dwm]]
 - *Application launcher*: [[https://tools.suckless.org/dmenu/][dmenu]]
+- *Status bar*: dwm bar + [[https://tools.suckless.org/slstatus/][slstatus]]
 - *Terminal*: [[https://st.suckless.org/][st]]
 - *Shell*: [[https://wiki.archlinux.org/title/zsh][Zsh]]
 - *Notification maemon*: [[https://github.com/dunst-project/dunst][dunst]]
