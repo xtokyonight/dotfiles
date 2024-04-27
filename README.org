@@ -10,6 +10,7 @@
 - *Status bar*: dwm bar + [[https://tools.suckless.org/slstatus/][slstatus]]
 - *Terminal*: [[https://st.suckless.org/][st]]
 - *Shell*: [[https://wiki.archlinux.org/title/zsh][Zsh]]
+- *Text editor*: [[https://neovim.io/][neovim]] & [[https://www.gnu.org/software/emacs/][emacs]]
 - *Notification maemon*: [[https://github.com/dunst-project/dunst][dunst]]
 - *Document viewer*: [[https://pwmt.org/projects/zathura/][zathura]]
 - *Video player*: [[https://github.com/mpv-player/mpv][mpv]]

@@ -9,11 +9,13 @@ endif
 
 " plugins
 call plug#begin('~/.vim/plugged')
+
 Plug 'gruvbox-community/gruvbox'
-Plug 'junegunn/goyo.vim'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'mbbill/undotree'
+"Plug 'junegunn/goyo.vim'
+"Plug 'tpope/vim-surround'
+"Plug 'mbbill/undotree'
+
 call plug#end()
 
 " colorscheme
@@ -24,6 +26,7 @@ set background=dark
 " The right way to override any highlighting if you don't want to edit the
 " colorscheme file directly.
 " https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
+
 function! MyHighlights() abort
     highlight Normal guibg=NONE ctermbg=NONE
 endfunction
