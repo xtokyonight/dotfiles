@@ -4,4 +4,4 @@ Nsxiv.window.foreground: white
 Nsxiv.mark.foreground: red
 Nsxiv.bar.background: #222222
 Nsxiv.bar.foreground: #bbbbbb
-Nsxiv.bar.font: JetBrains Mono-10
+Nsxiv.bar.font: Terminus-14
