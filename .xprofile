@@ -2,6 +2,7 @@ xrandr --output HDMI-0 --mode 1920x1080 --rate 120 --set TearFree on
 xwallpaper --zoom $HOME/.wallpapers/vjtkt501abr81.png
 setxkbmap -option ctrl:swapcaps
 xset r rate 300 50
+imwheel
 slstatus &
 dunst &
 udiskie &
